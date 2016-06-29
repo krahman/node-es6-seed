@@ -6,11 +6,11 @@ import ConfigObj from '../config/config';
 class WwwObject {
 
   constructor() {
-    app = express();
-    server = new ServerObj(this.app);
-    router = new RouterObj(this.app);
-    config = new ConfigObj(this.app);
-    run();
+    this.app = express();
+    this.server = new ServerObj(this.app);
+    this.router = new RouterObj(this.app);
+    this.config = new ConfigObj(this.app);
+    this.run();
   }
 
   run() {
