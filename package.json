@@ -4,6 +4,7 @@
   "description": "Node ES6 Express Seed",
   "scripts": {
     "start": "node node_modules/babel-cli/bin/babel-node server/bin/www.js",
+    "lint": "node node_modules/jshint/bin/jshint --reporter=node_modules/jshint-stylish  server/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,6 +22,8 @@
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-stage-1": "^6.5.0"
+    "babel-preset-stage-1": "^6.5.0",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0"
   }
 }

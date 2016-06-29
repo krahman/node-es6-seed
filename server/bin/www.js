@@ -4,12 +4,16 @@ import RouterObj from '../router/router';
 import ConfigObj from '../config/config';
 
 class WwwObject {
-  app = express();
-  server = new ServerObj(this.app);
-  router = new RouterObj(this.app);
-  config = new ConfigObj(this.app);
 
   constructor() {
+    app = express();
+    server = new ServerObj(this.app);
+    router = new RouterObj(this.app);
+    config = new ConfigObj(this.app);
+    run();
+  }
+
+  run() {
     this.server.parsers();
     this.router.routings(express.Router());
     this.config.setPort(process.env.PORT || 3000);
