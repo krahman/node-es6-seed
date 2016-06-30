@@ -1,4 +1,4 @@
-# ode-es6-seed with express
+# node-es6-seed
 This is a project skeleton for NodeJs application using Express in ECMAScript v6
 
 ## How to use
